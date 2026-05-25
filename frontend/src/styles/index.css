@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light;
+}
+
+body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+.glass {
+    @apply bg-white/80 backdrop-blur border border-slate-300/70 rounded-2xl dark:bg-slate-900/60 dark:border-slate-700/60;
+}
+
+.gradient-text {
+    @apply bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent;
+}
